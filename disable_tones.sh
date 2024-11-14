@@ -2,6 +2,9 @@
 # Path to your AllStarLink configuration
 AST_CFG='/etc/asterisk'
 
+# Backup the current configuration
+sudo cp $AST_CFG/rpt.conf $AST_CFG/rpt.conf.backup
+
 # Disable all courtesy tones (local and remote)
 sudo sed -i 's/^telemdefault=2/telemdefault=0/g' $AST_CFG/rpt.conf
 sudo sed -i 's/^telemdynamic=1/telemdynamic=0/g' $AST_CFG/rpt.conf

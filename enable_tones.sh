@@ -3,7 +3,7 @@
 AST_CFG='/etc/asterisk'
 
 # Backup the current configuration
-sudo cp $AST_CFG/rpt.conf $AST_CFG/rpt.conf.backup
+# sudo cp $AST_CFG/rpt.conf $AST_CFG/rpt.conf.backup
 
 # Enable all courtesy tones (local and remote)
 sudo sed -i 's/^telemdefault=0/telemdefault=2/g' $AST_CFG/rpt.conf

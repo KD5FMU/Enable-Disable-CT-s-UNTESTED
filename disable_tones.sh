@@ -1,4 +1,6 @@
 #!/bin/bash
+# Created by Freddie McGuire - KD5FMU and OpenAI ChatGPT
+# 
 # Path to your AllStarLink configuration
 AST_CFG='/etc/asterisk'
 
